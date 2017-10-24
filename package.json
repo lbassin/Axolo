@@ -8,12 +8,10 @@
   "scripts": {
     "dev": "npm-run-all --parallel serve electron:dev",
     "serve": "webpack-dev-server --port=4200",
-    "electron:dev": "./node_modules/electron/dist/electron . --dev",
-
+    "electron:dev": "electron . --dev",
     "prod": "npm-run-all build electron:prod",
-    "electron:prod": "./node_modules/electron/dist/electron .",
+    "electron:prod": "electron .",
     "build": "webpack",
-
     "ng": "ng",
     "test": "karma start ./karma.conf.js",
     "lint": "ng lint",
